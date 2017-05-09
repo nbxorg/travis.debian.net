@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="media/style.css?v=2" media="screen">
 
   <title>
-    travis.debian.net &mdash; Easily build and test your Debian packaging on travis-ci.org &amp; GitHub
+    travis.netbox.space &mdash; Easily build and test your Debian packaging on travis-ci.org &amp; GitHub
   </title>
 </head>
 
@@ -17,7 +17,7 @@
 
 <header>
   <div class="container">
-    <h1>travis.debian.net</h1>
+    <h1>travis.netbox.space</h1>
     <h2>Easily build and test your Debian packaging on travis-ci.org &amp; GitHub</h2>
   </div>
 </header>
@@ -29,7 +29,7 @@
     </h3>
 
     <p>
-      <tt>travis.debian.net</tt> is a hosted service for projects that host
+      <tt>travis.netbox.space</tt> is a hosted service for projects that host
       their Debian packaging on <a href="https://github.com/">GitHub</a> to use
       the <a href="https://travis-ci.org">Travis CI</a> continuous integration
       platform to test builds on every update. Amongst many other advantages,
@@ -38,14 +38,14 @@
     </p>
 
     <p>
-      Whilst possible without <tt>travis.debian.net</tt>, using this service
+      Whilst possible without <tt>travis.netbox.space</tt>, using this service
       not only avoids unwieldy duplication of configuration, it works around
       backwards-compatibility issues in supporting tools in older Debian
       releases.
     </p>
 
     <p>
-      <tt>travis.debian.net</tt> additionally supports running
+      <tt>travis.netbox.space</tt> additionally supports running
       <em>autopkgtest</em> tests and disabling network access during builds.
     </p>
 
@@ -68,9 +68,9 @@
         <a href="https://honk.sigxcpu.org/piki/projects/git-buildpackage/">git-buildpackage</a>
         branches:
 
-        <pre>$ wget -O.travis.yml <a href="http://travis.debian.net/travis.yml">http://travis.debian.net/travis.yml</a>
+        <pre>$ wget -O.travis.yml <a href="http://travis.netbox.space/travis.yml">http://travis.netbox.space/travis.yml</a>
 $ git add .travis.yml
-$ git commit -m "Add .travis.yml from http://travis.debian.net."</pre>
+$ git commit -m "Add .travis.yml from http://travis.netbox.space."</pre>
 
         For "3.0 (quilt)" packages:
         <pre>$ echo 'extend-diff-ignore = "^\.travis\.yml$"' &gt;&gt; <br>      debian/source/options</pre>
@@ -85,12 +85,12 @@ $ git commit -m "Add .travis.yml from http://travis.debian.net."</pre>
     </h3>
 
     <p>
-      At it's core <tt>travis.debian.net</tt> is a hosted POSIX shell script
+      At it's core <tt>travis.netbox.space</tt> is a hosted POSIX shell script
       that is executed within the Travis CI test environment.
     </p>
 
     <p>
-      First, <tt>travis.debian.net</tt> detects which release of Debian
+      First, <tt>travis.netbox.space</tt> detects which release of Debian
       the branch is targeting based on the current branch name. The
       <em>experimental</em> suite and all varieties of backports are
       intelligently detected.
